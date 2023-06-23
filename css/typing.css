@@ -1,0 +1,75 @@
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "D"; }
+  2.2791%, 25.0698% { content: "De"; }
+  3.4186%, 23.9302% { content: "Dev"; }
+  4.5581%, 22.7907% { content: "Deve"; }
+  5.6977%, 21.6512% { content: "Devel"; }
+  6.8372%, 20.5116% { content: "Develo"; }
+  7.9767%, 19.3721% { content: "Develop"; }
+  9.1163%, 18.2326% { content: "Develope"; }
+  10.2558%, 17.0930% { content: "Developer"; }
+
+  30.7674%, 51.2791% { content: ""; }
+  31.9070%, 50.1395% { content: "S"; }
+  33.0465%, 49.0000% { content: "St"; }
+  34.1860%, 47.8605% { content: "Stu"; }
+  35.3256%, 46.7209% { content: "Stud"; }
+  36.4651%, 45.5814% { content: "Stude"; }
+  37.6047%, 44.4419% { content: "Studen"; }
+  38.6047%, 44.4419% { content: "Student"; }
+ 
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "H"; }
+  56.9767%, 72.9302% { content: "Hu"; }
+  58.1163%, 71.7907% { content: "Hum"; }
+  59.2558%, 70.6512% { content: "Human"; }
+  60.3953%, 69.5116% { content: "Human?"; }  
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "developer"; }
+    25% { content: "student"; }
+    30% { content: "human"; }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
