@@ -95,7 +95,9 @@
     top: 0;
     width: 100%;
     align-items: center;
-    background-color: var(--menu-mobile-background-color);
+  /*background-color: var(--menu-mobile-background-color);*/
+    backdrop-filter: blur(3px);
+    background-color: rgba(8, 13, 16, 0.50);
     height: 100%;
     overflow-y: auto;
 
