@@ -19,7 +19,10 @@ section[id] {
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("../img/bacground.jpg");
- /* background-color: var(--theme-color); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   color: var(--text-color);
   padding-top: 70px;
 }

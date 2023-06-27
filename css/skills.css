@@ -4,6 +4,7 @@
 }
 
 .skills-title {
+  color: #1A3F6D;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -17,6 +18,12 @@
   border-radius: 42px;
   padding: 0.5em 0.7em;
   margin: 10px;
+}
+
+.skills-skill:hover {
+  backdrop-filter: blur(3px);
+  background-color: rgba(8, 13, 16, 0.20);
+ text-shadow: 0 0 5px rgba(203, 203, 52, 0.8);
 }
 
 .skills-list {
