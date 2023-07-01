@@ -5,7 +5,8 @@
   --text-color-inverse: white;
   --text-color: white;
   --navbar-shallow-color: #e5e5e5;
-  --menu-mobile-background-color: #3a4460; 
+  --backblur: blur(3px);
+  --backcolor: rgba(8, 13, 16, 0.50);
 }
 
 html {

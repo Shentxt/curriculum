@@ -1,9 +1,9 @@
 .topheader {
-  box-shadow: 0 4px 5px var(--navbar-shallow-color);
+  box-shadow: 0 4px 5px var(--navbar-shallow-color); 
   position: fixed;
-  backdrop-filter: blur(3px);
-  background-color: rgba(8, 13, 16, 0.50);
-  left: 0;
+  backdrop-filter: var(--backblur);
+  background-color: var(--backcolor);
+   left: 0;
   top: 0;
   width: 100%;
   z-index: 100;
@@ -89,15 +89,14 @@
 @media (max-width: 950px) {
   /* Menu */
   .menu {
-    flex-direction: column;
+    flex-direction: row;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     align-items: center;
-  /*background-color: var(--menu-mobile-background-color);*/
-    backdrop-filter: blur(3px);
-    background-color: rgba(8, 13, 16, 0.50);
+    backdrop-filter: var(--backblur);
+    background-color: var(--backcolor);
     height: 100%;
     overflow-y: auto;
 
@@ -105,16 +104,22 @@
     pointer-events: none;
     transition: opacity 0.3s;
   }
-
+ 
   .menu li {
     padding: 0;
   }
 
   .menu a {
-    color: var(--text-color-inverse);
-    line-height: 70px;
-    font-size: 25px;
-  }
+    position: relative;
+    top: 50%;
+    left: 12em;
+    padding: 4px;
+    transform: translate(0, -50%);
+    color: var(--text-color-inverse); 
+    font-size: 18px;
+    font-weight: 500;
+   line-height: 70px;
+}
 
   .open-menu,
   .close-menu {
@@ -124,9 +129,12 @@
     cursor: pointer;
   }
 
-  .close-menu {
+  .close-menu{
+    position: fixed;
     align-self: flex-end;
-    padding: 20px 15px;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
   }
 
   .menu_opened {
@@ -145,6 +153,6 @@
 
   .menu a:hover,
   .menu a.selected {
-    color: var(--secundary-color);
+  color: var(--secundary-color);
   }
 }
