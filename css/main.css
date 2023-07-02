@@ -33,6 +33,24 @@ a {
   color: var(--text-color);
 }
 
+.copy-container {
+  color: var(--text-color);
+  box-shadow: 0 4px 5px var(--navbar-shallow-color); 
+  backdrop-filter: var(--backblur);
+  background-color: var(--backcolor);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  margin-top: auto;
+  left: 12em;
+  top: 0;
+  width: 100%;
+}
+
 .horizontal-padding {
   padding-left: 25px;
   padding-right: 25px;
