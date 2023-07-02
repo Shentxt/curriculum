@@ -112,7 +112,8 @@
   .menu a {
     position: relative;
     top: 50%;
-    left: 12em;
+    left: 6em;
+    text-align: center;
     padding: 4px;
     transform: translate(0, -50%);
     color: var(--text-color-inverse); 
