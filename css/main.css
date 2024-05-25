@@ -1,10 +1,12 @@
 :root {
  /* --theme-color: white; */
-  --primary-color: #124f88;
+  --primary-color:  #c0caf5;
   --secundary-color: #f7c331;
-  --text-color-inverse: white;
-  --text-color: white;
-  --navbar-shallow-color: #e5e5e5;
+  --text-color-inverse:  white;
+  --text-color:   white;
+  --lavanda : #d1cfe5;
+
+  --navbar-shallow-color: #d1cfe5;
   --backblur: blur(3px);
   --backcolor: rgba(8, 13, 16, 0.50);
 }
@@ -15,6 +17,26 @@ html {
 
 section[id] {
   scroll-margin-top: 70px;
+}
+
+/* for Chromium */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--lavanda), var(--blackcolor));
+  border-radius: 6px;
+}
+
+/* for Firefox */
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--lavanda) var(--backcolor);
 }
 
 body {

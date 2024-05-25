@@ -9,6 +9,10 @@
   max-width: 300px;
 }
 
+.img-hover {
+  transition: transform 0.5s ease;
+}
+
 .profile-img-section {
   position: relative;
 }

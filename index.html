@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 
 <!-- Main -->
-<html lang="es">
+<html lang="es"> 
 
 <head>
-  <meta charset="UTF-8" />
+  <met2a charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>DevCode</title>
 
   <!-- Links -->
+  <link rel="icon" href="img/icon.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
@@ -31,18 +32,19 @@
   <header class="topheader">
     <nav class="topnav">
       <a href="#" class="logo">
-        <img height="50" width="50" src="img/guts.jpg" alt="programador" />
+        <img height="50" width="50" src="img/bocchi.jpg" alt="programador" />
         <div class="logotype">
-          Shen<br />
-          { code }
+        🌸 Shen 
+        <br />
+        { code }
         </div>
       </a>
       <button class="open-menu" aria-label="Abrir menú">
-        <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        <img src="img/open.png" alt="abrir menú" />
       </button>
       <ul class="menu">
         <button class="close-menu" aria-label="Cerrar menú">
-          <img src="img/close-icon.svg" alt="cerrar menú" />
+          <img src="img/close.png" alt="cerrar menú" />
         </button>
         <li><a href="#profile" class="selected">Perfil</a></li>
         <li><a href="#experience">Experiencia</a></li>
@@ -64,63 +66,56 @@
           siempre buscando mejorar mientras creo nuevas cosas.
           me embarco en diferentes entornos de gestión de ventanas me permite
           adquirir experiencia y desarrollar mis habilidades en diversos lenguajes de programación.</p>
-        <button class="profile-btn"><i class="fa-solid fa-download"></i> Descargar cv</button>
-      </div>
+          <button class="profile-btn"><a
+            href="https://drive.google.com/file/d/1cte7hDaQi64V2Kiq-br--kE7pxr_Pr4X/view?usp=drive_link"><i
+              class="fa-brands fa-google-drive"></i> CV<a></button>
+              </div>
       <span class="profile-img-section">
-        <img class="profile-img" src="img/mushasi.png" alt="programador" />
-        <div class="profile-img-line"></div>
+        <img class="profile-img" src="img/icon.png" alt="programador" />  
       </span>
     </section>
   </div>
-  <img src="img/wave.svg" alt"división" class="wave" />
 
   <!-- Experience -->
   <div class="horizontal-padding vertical-padding">
     <section class="profile" id="experience">
       <div class="profile-info">
-        <h1 class="profile-title"><br />Experiencia
+        <h1 class="profile-title"><br />Experiencia 
         </h1>
         <p class="profile-details">
-          Tengo experiencia en la instalación y uso de sistemas UNIX (Linux),
+          Tengo experiencia en la instalación y uso de sistemas GNU-Linux,
           adquiri conocimientos en front-end y back-end.
           debido a estas experiencias desarrolle habilidades con el diseño,
           la escritura de scripts y la arquitectura de sistemas, etc.</p>
-        <button class="profile-btn"><a
-            href="https://drive.google.com/drive/u/0/folders/1RwXTNRyJ_XXsL8CYIA2__rZFats_WqKI"><i
-              class="fa-brands fa-google-drive"></i> Drive</a></button>
       </div>
       <span class="profile-img-section">
         <img class="profile-img" src="./img/code.png" alt="programador" />
-        <div class="profile-img-line"></div>
       </span>
     </section>
   </div>
-  <img src="img/wave.svg" alt"división" class="wave" />
 
   <!-- Habilities -->
   <div class="horizontal-padding vertical-padding">
     <section class="skills" id="skills">
       <h2 class="skills-title">Habilidades</h2>
       <ul class="skills-list">
-        <li class="skills-skill">CSS</li>
-        <li class="skills-skill">HTML</li>
-        <li class="skills-skill">MarkDown</li>
-        <li class="skills-skill">Git</li>
-        <li class="skills-skill">Vim</li>
-        <li class="skills-skill">Linux</li>
-        <li class="skills-skill">TypingScript</li>
-        <li class="skills-skill">JavaScript</li>
-        <li class="skills-skill">Python</li>
-        <li class="skills-skill">Lua</li>
-        <li class="skills-skill">Rust</li>
-        <li class="skills-skill">C#</li>
+        <li class="skills-skill"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+        <li class="skills-skill"><i class="fa-brands fa-html5"></i> HTML</li>
+        <li class="skills-skill"><i class="fa-brands fa-markdown"></i> MarkDown</li>
+        <li class="skills-skill"><i class="fa-brands fa-git-alt"></i> Git</li>
+        <li class="skills-skill"><i class="fa-brands fa-vimeo-v"></i> Vim</li>
+        <li class="skills-skill"><i class="fa-brands fa-linux"></i> Linux</li>
+        <li class="skills-skill"><i class="fa-solid fa-code"></i> Bash</li>
+        <li class="skills-skill"><i class="fa-brands fa-js"></i> JavaScript</li>
+        <li class="skills-skill"><i class="fa-brands fa-python"></i> Python</li>
+        <li class="skills-skill"><i class="fa-solid fa-l"></i> Lua</li>
+        <li class="skills-skill"><i class="fa-solid fa-c"></i>-Sharp</li>
       </ul>
     </section>
   </div>
 
   <!-- Study -->
   <section class="study" id="study">
-    <img src="img/wave.svg" alt"división" class="wave" />
     <h2 class="skills-title">Formacion</h2>
     <ul class="skills-list">
       <li class="skills-skill"> <img src="img/unahur.png" />
@@ -128,21 +123,24 @@
           14/2/2023 - 15/5/2023</p>
       <li class="skills-skill"> <img src="img/alura.svg" />
         <p class="typ">Formacion en Front-End.<br>
-          27/2/2023 - actualmente</p>
+          27/2/2023 - 15/5/2023</p>
+      </li>
+      <li class="skills-skill"> <img src="img/ituz.png" />
+        <p class="typ">Tecnicatura en Sistemas.<br>
+          14/2/2024 - Actualmente</p>
       </li>
     </ul>
   </section>
 
   <!-- Contact -->
   <section class="contact" id="contact">
-    <img src="img/wave.svg" alt"división" class="wave" />
-    <h2 class="skills-title">Contacto</h2>
+   <h2 class="skills-title">Contacto</h2>
     <ul class="skills-list">
       <li class="skills-skill"><a href=" https://github.com/Shentxt"><i class="fa-brands fa-github"></i> Github</a>
       </li>
       <li class="skills-skill"><a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i>
           Linkedin</a></li>
-      <li class="skills-skill"><a href="mailto:fedeezequiel515@gmail.com"><i class="fa-brands fa-google"></i> Gmail</a>
+      <li class="skills-skill"><a href="mailto:shenblaskowitz@gmail.com"><i class="fa-brands fa-google"></i> Gmail</a>
       </li>
     </ul>
   </section>

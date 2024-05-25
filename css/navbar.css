@@ -54,7 +54,7 @@
 
 .menu a::after {
   content: "";
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   position: absolute;
   left: 0;
   top: calc(100% + 4px);
@@ -112,18 +112,18 @@
   .menu a {
     position: relative;
     top: 50%;
-    left: 6em;
+    left: 2em;
     text-align: center;
-    padding: 4px;
+    padding: 3px;
     transform: translate(0, -50%);
     color: var(--text-color-inverse); 
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
    line-height: 70px;
 }
 
   .open-menu,
-  .close-menu {
+  .close-menu  {
     display: block;
     border: none;
     background: none;
@@ -154,6 +154,6 @@
 
   .menu a:hover,
   .menu a.selected {
-  color: var(--secundary-color);
+  color: var(--primary-color);
   }
 }
