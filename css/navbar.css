@@ -112,12 +112,12 @@
   .menu a {
     position: relative;
     top: 50%;
-    left: 2em;
+    left: 1em;
     text-align: center;
-    padding: 3px;
+    padding: 2px;
     transform: translate(0, -50%);
     color: var(--text-color-inverse); 
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
    line-height: 70px;
 }
