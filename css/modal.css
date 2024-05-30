@@ -28,6 +28,13 @@
   height: 65%; 
 }
 
+.iframe {
+  background-color: var(--backcolor);
+  backdrop-filter: var(--backblur); 
+  border: 2px solid var(--lavanda); 
+  border-radius: 12px;
+}
+
 .close {
   color: var(--primary-color);
   float: right;
